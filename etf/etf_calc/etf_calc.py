@@ -5,12 +5,6 @@ import datetime as dt
 import csv
 
 
-def main():
-    # create etf instance
-    e = Etf('ishares', 'ieac', '20211112')
-    print(e)
-
-
 class Etf:
     ''' get pcf for a given issuer and given date
     
@@ -84,6 +78,10 @@ class Etf:
             date: {self.pcf_date}'''
         
 
+def main():
+    # create etf instance
+    e = Etf('ishares', 'ieac', '20211112')
+    print(e)
 
 
 # main guard idiom
